@@ -1,12 +1,18 @@
-// import { useState } from 'react'
-import './App.css'
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ProductList from './components/Products/Products';
+import ProductDetails from './components/ProductDetails/ProductDetails';
 
 function App() {
-
   return (
-    <>
-      <h1>My E-commerce Store</h1>
-    </>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/products" element={<ProductList />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
