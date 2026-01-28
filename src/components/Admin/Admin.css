@@ -1,0 +1,60 @@
+.admin-header h2, p {
+    margin: 0;
+}
+
+.admin-header {
+    margin-bottom: 20px;
+}
+
+.admin-header p {
+    color: #555;
+    font-size: 12px;
+}
+
+.admin-header h2 {
+    font-size: 30px;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /* margin: 0 auto; */
+    border: 2px solid #ccc;
+    padding: 4rem;
+    background-color: #F9F9F9;
+}
+
+.username-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: flex-start;
+    gap: .75rem;
+}
+
+.username-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.username-input label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.admin-form button {
+    padding: 12px;
+    background-color: #3A78FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0.2rem;
+}
