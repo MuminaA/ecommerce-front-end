@@ -1,20 +1,12 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ProductList from './components/Products/Products';
-import ProductDetails from './components/ProductDetails/ProductDetails';
-import Admin from './components/Admin/Admin';
-import AdminDashboard from './components/AdminDashboard/AdminDashboard';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/products" element={<ProductList />} />
-          <Route path="/products/:id" element={<ProductDetails />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/admin/dashboard" element={<AdminDashboard />} />
-        </Routes>
+        <AppRoutes />
       </div>
     </Router>
   )
