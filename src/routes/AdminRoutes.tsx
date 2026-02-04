@@ -4,7 +4,7 @@ import AdminOrders from '../pages/Admin/Order';
 import AddProduct from '../pages/Admin/AddProducts';
 import EditProduct from '../pages/Admin/EditProduct';
 
-export const adminRoutes = [
+export const AdminRoutes = [
     {
         path: '/admin',
         element: <Admin />,

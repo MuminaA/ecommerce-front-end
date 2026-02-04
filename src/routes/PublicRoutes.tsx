@@ -4,7 +4,7 @@ import ShoppingCart from '../pages/Cart';
 import Checkout from '../pages/Checkout';
 import OrderConfirmation from '../pages/OrderConfirmation';
 
-export const publicRoutes = [
+export const PublicRoutes = [
   {
     path: '/',
     element: <Index />

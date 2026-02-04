@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import { publicRoutes} from "./publicRoutes";
-import { adminRoutes } from "./adminRoutes";
+import { PublicRoutes } from "./PublicRoutes";
+import { AdminRoutes } from "./AdminRoutes";
 
 export default function AppRoutes() {
   return (
     <Routes>
-      {publicRoutes.map((route) => (
+      {PublicRoutes.map((route) => (
         <Route key={route.path} path={route.path} element={route.element} />
       ))}
-      {adminRoutes.map((route) => (
+      {AdminRoutes.map((route) => (
         <Route key={route.path} path={route.path} element={route.element} />
       ))}
     </Routes>
